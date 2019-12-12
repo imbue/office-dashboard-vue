@@ -2,7 +2,7 @@ import axios from 'axios'
 
 class Weather {
   async forCity (city) {
-    const key = '49fabee861bbccf9a5c2070f151f8004'
+    const key = window.dashboard.openWeatherApiKey
 
     const response = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`
