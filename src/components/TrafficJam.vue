@@ -38,7 +38,7 @@ export default {
   },
   created () {
     this.fetchTrafficJamDistance()
-    setInterval(this.fetchTrafficJamDistance, 15 * 60 * 1000)
+    setInterval(this.fetchTrafficJamDistance, 15 * 60 * 100)
   },
   methods: {
     async fetchTrafficJamDistance () {

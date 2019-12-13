@@ -35,7 +35,7 @@ export default {
   },
   created () {
     this.fetchWeather()
-    setInterval(this.fetchWeather, 15 * 60 * 1000)
+    setInterval(this.fetchWeather, 15 * 60 * 100)
   },
   methods: {
     async fetchWeather () {
